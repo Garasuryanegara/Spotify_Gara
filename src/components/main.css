@@ -1,0 +1,76 @@
+.gradient {
+  background: linear-gradient(#1e1e1e 70%, #121212);
+}
+@font-face {
+  font-family: "circular";
+  src: url(../assets/main/CircularStd-Bold.otf);
+}
+.title1 {
+  font-size: 24px;
+  color: white;
+  font-family: "circular";
+  height: 25px;
+  cursor: pointer;
+}
+.title2 {
+  font-size: 14px;
+  color: #afafaf;
+  font-family: "circular";
+  height: 38px;
+}
+.title2:hover {
+  text-decoration: underline;
+}
+.judul {
+  font-size: 15px;
+  font-family: "circular";
+  color: #fcfcfc;
+}
+.desc {
+  font-size: 13px;
+  font-weight: lighter;
+  font-family: "circular";
+  color: #a7a7a7;
+}
+
+@media (min-width: (2139px)) {
+  .container {
+    max-width: 1933px;
+  }
+}
+/* @media screen and (max-width: 2057px) {
+  .container {
+    max-width: 1572px;
+  }
+} */
+.card {
+  display: flex;
+  flex-direction: column;
+  min-width: 181px;
+  min-height: 271px;
+  padding: 20px;
+  border-radius: 7px;
+  background-color: #181818;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.play {
+  height: 271px;
+  width: 181px;
+  position: absolute;
+  z-index: 2;
+  opacity: 0;
+  display: grid;
+  justify-items: end;
+  align-content: center;
+  padding-right: 25px;
+  padding-top: 20px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  background-color: #262626;
+}
+.play:hover {
+  opacity: 1;
+}
